@@ -1,5 +1,13 @@
-# WedPlan - Client
+<div align="center">
+  <h1><strong>WedPlan - Client</strong></h1>
+  <p>
+    <strong>Live Website:</strong> <a href="YOUR_LIVE_LINK">YOUR_LIVE_LINK</a><br>
+    <strong>Client Repository:</strong> <a href="YOUR_CLIENT_REPO_LINK">YOUR_CLIENT_REPO_LINK</a><br>
+    <strong>Server Repository:</strong> <a href="YOUR_SERVER_REPO_LINK">YOUR_SERVER_REPO_LINK</a>
+  </p>
+</div>
 
+## About 
 WedPlan is a wedding planning platform. Customers find wedding services and send booking requests. Vendors publish services and manage requests. Admins review services, manage users and watch transactions.
 
 This is the Next.js client. It also runs Better Auth (sign in, sign up, Google login and JWT issuing).
@@ -65,8 +73,3 @@ npm run make-admin -- your-admin-email@example.com
 - The Express server verifies JWTs using `<client URL>/api/auth/jwks`, so `CLIENT_URL` on the server must match this site exactly.
 - Add the live Google redirect URI in the Google Cloud console.
 
-## Links
-
-- Live Website: ADD_LIVE_LINK
-- Client Repository: ADD_CLIENT_REPO_LINK
-- Server Repository: ADD_SERVER_REPO_LINK
