@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+:root {
+  --background: #fbf9f6;
+  --foreground: #1e2b25;
+  --card: #ffffff;
+  --primary: #2f4a3c;
+  --primary-foreground: #fbf9f6;
+  --gold: #b8935a;
+  --blush: #f3e1dc;
+  --sage: #dfe8e0;
+  --muted: #66756c;
+  --border: #e4e0d8;
+  --danger: #b4443a;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-gold: var(--gold);
+  --color-blush: var(--blush);
+  --color-sage: var(--sage);
+  --color-muted: var(--muted);
+  --color-border: var(--border);
+  --color-danger: var(--danger);
+  --font-sans: "Jost Variable", system-ui, sans-serif;
+  --font-serif: "Cormorant Garamond", Georgia, serif;
+}
+
+html { scroll-behavior: smooth; }
+body { background: var(--background); color: var(--foreground); font-family: var(--font-sans); -webkit-font-smoothing: antialiased; }
+h1, h2, h3, .font-display { font-family: var(--font-serif); font-weight: 600; letter-spacing: -0.01em; }
+:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
+.arch { border-top-left-radius: 999px; border-top-right-radius: 999px; }
