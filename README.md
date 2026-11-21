@@ -27,13 +27,20 @@ This is the Next.js client. It also runs Better Auth (sign in, sign up, Google l
 
 ## Technology Stack
 
-Next.js 15 (App Router), JavaScript, Tailwind CSS 4, ShadCN-style components with Radix UI, Framer Motion, Better Auth, MongoDB, Sonner toasts.
+- Next.js 15 (App Router) 
+- JavaScript
+- Tailwind CSS 4
+- ShadCN-style components with Radix UI 
+- Framer Motion
+- Better Auth
+- MongoDB
+- Sonner toasts.
 
 ## Installation
 
 ```bash
 npm install
-cp .env.example .env
+cp .env.local
 ```
 
 Fill in `.env`:
@@ -68,8 +75,7 @@ npm run make-admin -- your-admin-email@example.com
 
 ## Deployment notes
 
-- Deploy to Vercel. Add every variable from `.env.example` in the project settings.
+- Deploy to Vercel. Add every variable from `.env.local` in the project settings.
 - Set `BETTER_AUTH_URL` to the live client URL.
 - The Express server verifies JWTs using `<client URL>/api/auth/jwks`, so `CLIENT_URL` on the server must match this site exactly.
 - Add the live Google redirect URI in the Google Cloud console.
-
