@@ -1,9 +1,9 @@
 <div align="center">
   <h1><strong>WedPlan - Client</strong></h1>
   <p>
-    <strong>Live Website:</strong> <a href="YOUR_LIVE_LINK">YOUR_LIVE_LINK</a><br>
-    <strong>Client Repository:</strong> <a href="YOUR_CLIENT_REPO_LINK">YOUR_CLIENT_REPO_LINK</a><br>
-    <strong>Server Repository:</strong> <a href="YOUR_SERVER_REPO_LINK">YOUR_SERVER_REPO_LINK</a>
+    <strong>Live Website:</strong> <a href="https://a9-wedplan-client.vercel.app/">Visit Here</a><br>
+   <br>
+    <strong>Server Repository:</strong> <a href="https://github.com/Habib1127/A9-wedplan-server">SERVER_REPO_LINK</a>
   </p>
 </div>
 
@@ -50,8 +50,8 @@ Fill in `.env`:
 | MONGODB_URI | MongoDB connection string (same database as the server) |
 | DB_NAME | Database name (same as the server) |
 | BETTER_AUTH_SECRET | Long random string (`openssl rand -base64 32`) |
-| BETTER_AUTH_URL | URL of this client, for example http://localhost:3000 |
-| NEXT_PUBLIC_API_URL | URL of the Express server, for example http://localhost:5000 |
+| BETTER_AUTH_URL | URL of this client, for example https://a9-wedplan-client.vercel.app/ |
+| NEXT_PUBLIC_API_URL | URL of the Express server, for examplehttps://a9-wedplan-server.vercel.app/ |
 | GOOGLE_CLIENT_ID / GOOGLE_CLIENT_SECRET | Google OAuth credentials |
 | IMGBB_API_KEY | ImgBB API key |
 
@@ -63,14 +63,14 @@ Google OAuth redirect URI: `<BETTER_AUTH_URL>/api/auth/callback/google`
 npm run dev
 ```
 
-Open http://localhost:3000. Start the server repo too, or API calls will fail.
+Open https://a9-wedplan-client.vercel.app/. Start the server repo too, or API calls will fail.
 
 ## Creating the admin account
 
 Admin accounts cannot be created from the public sign-up. Sign up normally, then run this in the server repo:
 
 ```bash
-npm run make-admin -- your-admin-email@example.com
+node --env-file=.env src/scripts/makeAdmin.js email@example.com
 ```
 
 ## Deployment notes
